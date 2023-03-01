@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #550D9C;
+  --white: #fff;
+  --dark: #000;
+  --white-gray: #D9D9D9;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #6B00D7 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 900px;
+  height: 850px;
+  border-radius: 50px;
+  border: 3px solid var(--white-gray);
+  background: linear-gradient(0deg, rgba(129, 10, 249, 0.3) 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.form-container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--white-gray);
+}
+.form-container .content {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.form-container .content .personal-data {
+  width: 750px;
+  height: 200px;
+  background: linear-gradient(90deg, #550D9C 0%, rgba(85, 13, 156, 0) 100%);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.form-container .content .personal-data h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-container .content .personal-data form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.form-container .content .personal-data form .flex-name {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .personal-data form .flex-name label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .personal-data form .flex-name input {
+  width: 700px;
+  height: 40px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: 2px solid var(--white-gray);
+  outline: none;
+  color: var(--white);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .personal-data form .flex-name input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .personal-data form .flex-personal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.form-container .content .personal-data form .flex-personal .date {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .personal-data form .flex-personal .date label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .personal-data form .flex-personal .date input {
+  width: 340px;
+  height: 40px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: 2px solid var(--white-gray);
+  outline: none;
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--white-gray);
+}
+.form-container .content .personal-data form .flex-personal .date input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .personal-data form .flex-personal .cpf {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .personal-data form .flex-personal .cpf label {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--white-gray);
+}
+.form-container .content .personal-data form .flex-personal .cpf input {
+  width: 340px;
+  height: 40px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: 2px solid var(--white-gray);
+  outline: none;
+  color: var(--white);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .personal-data form .flex-personal .cpf input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .address {
+  width: 750px;
+  height: 200px;
+  background: linear-gradient(180deg, #550D9C 0%, rgba(85, 13, 156, 0) 100%);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.form-container .content .address h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-container .content .address form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.form-container .content .address form .flex-up {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.form-container .content .address form .flex-up .logradouro {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .address form .flex-up .logradouro label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .address form .flex-up .logradouro input {
+  width: 510px;
+  height: 40px;
+  background-color: var(--purple);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .address form .flex-up .logradouro input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .address form .flex-up .number {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .address form .flex-up .number label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .address form .flex-up .number input {
+  width: 170px;
+  height: 40px;
+  background-color: var(--purple);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .address form .flex-up .number input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .address form .flex-down {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.form-container .content .address form .flex-down .cep {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .address form .flex-down .cep label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .address form .flex-down .cep input {
+  width: 200px;
+  height: 40px;
+  background-color: var(--purple);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .address form .flex-down .cep input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .address form .flex-down .city {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .address form .flex-down .city label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .address form .flex-down .city input {
+  width: 200px;
+  height: 40px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: 2px solid var(--white-gray);
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .address form .flex-down .city input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .address form .flex-down .state {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .address form .flex-down .state label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .address form .flex-down .state select {
+  width: 80px;
+  height: 40px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: 2px solid var(--white-gray);
+  outline: none;
+  color: var(--white-gray);
+  font-size: 14px;
+  font-weight: 600;
+}
+.form-container .content .address form .flex-down .state select:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .address form .flex-down .complement {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .address form .flex-down .complement label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .address form .flex-down .complement input {
+  width: 160px;
+  height: 40px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  border: 2px solid var(--white-gray);
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .address form .flex-down .complement input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .contact {
+  width: 750px;
+  height: 200px;
+  background: linear-gradient(270deg, #550D9C 0%, rgba(85, 13, 156, 0) 100%);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.form-container .content .contact h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-container .content .contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.form-container .content .contact form .flex-email {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .contact form .flex-email label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .contact form .flex-email input {
+  width: 700px;
+  height: 40px;
+  background-color: var(--purple);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .contact form .flex-email input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .contact form .flex-tel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.form-container .content .contact form .flex-tel .tel {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .contact form .flex-tel .tel label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .contact form .flex-tel .tel input {
+  width: 340px;
+  height: 40px;
+  background-color: var(--purple);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .contact form .flex-tel .tel input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .contact form .flex-tel .phone {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .content .contact form .flex-tel .phone label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--white-gray);
+}
+.form-container .content .contact form .flex-tel .phone input {
+  width: 340px;
+  height: 40px;
+  background-color: var(--purple);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  outline: none;
+  color: var(--white-gray);
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+.form-container .content .contact form .flex-tel .phone input:focus {
+  border: 3px solid var(--white-gray);
+}
+.form-container .content .submit {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-container .content .submit button {
+  width: 300px;
+  height: 60px;
+  background: linear-gradient(0deg, #000000 0%, #550D9C 100%);
+  border: 2px solid var(--white-gray);
+  border-radius: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--white-gray);
+  cursor: pointer;
+  transition: all 0, 5s;
+}
+.form-container .content .submit button:hover {
+  border: 4px solid var(--white-gray);
+}/*# sourceMappingURL=style.css.map */

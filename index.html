@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortscut icon" href="assets/18515170159e926d50fee54a4c15488d.jpg">
+    <title>cadastro de clientes</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h1>Cadastro de Clientes</h1>
+
+                <div class="content">
+                    <div class="personal-data">
+                        <h1>Dados pessoais</h1>
+
+                        <form>
+                            <div class="flex-name">
+                                <label>NOME COMPLETO</label>
+                                <input 
+                                    type="text"
+                                    name="full-name"
+                                    required>
+                            </div>
+
+                            <div class="flex-personal">
+                                <div class="date">
+                                    <label>DATA DE NASCIMENTO</label>
+                                    <input 
+                                        type="date"
+                                        name="birthday"
+                                        required>
+                                </div>
+                                <div class="cpf">
+                                    <label>CPF</label>
+                                    <input 
+                                        type="text"
+                                        name="cpf"
+                                        required>
+                                </div>
+                                    
+                                </div>
+                        </form>
+                    </div>
+
+                    <div class="address">
+                        <h1>Endereço</h1>
+
+                        <form>
+                            <div class="flex-up">
+                                <div class="logradouro">
+                                    <label>LOGRADOURO</label>
+                                    <input 
+                                        type="text"
+                                        name="street"
+                                        required>
+                                </div>
+
+                                <div class="number">
+                                    <label>NUMERO</label>
+                                    <input 
+                                        type="number"
+                                        name="number"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="flex-down">
+                                <div class="cep">
+                                    <label>CEP</label>
+                                    <input 
+                                        type="text"
+                                        name="cpf"
+                                        required>
+                                </div>
+
+                                <div class="city">
+                                    <label>CIDADE</label>
+                                    <input type="text"
+                                    name="city"
+                                    required>
+                                </div>
+
+                                <div class="state">
+                                    <label>UF</label>
+                                    <select>
+                                        <option selected disabled value="">Escolha</option>
+                                        <option>AC</option>
+                                        <option>AL</option>
+                                        <option>AP</option>
+                                        <option>AM</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>DF</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MT</option>
+                                        <option>MS</option>
+                                        <option>MG</option>
+                                        <option>PA</option>
+                                        <option>PB</option>
+                                        <option>PR</option>
+                                        <option>PE</option>
+                                        <option>PI</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RS</option>
+                                        <option>RO</option>
+                                        <option>RR</option>
+                                        <option>SC</option>
+                                        <option>SP</option>
+                                        <option>SE</option>
+                                        <option>TO</option>
+                                    </select>
+                                </div>
+
+                                <div class="complement">
+                                    <label>COMPLEMENTO</label>
+                                    <input type="text"
+                                    name="complement"
+                                    >
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact">
+                        <h1>Contato</h1>
+
+                        <form>
+                            <div class="flex-email">
+                                <label>E-MAIL</label>
+                                <input 
+                                    type="email"
+                                    name="email"
+                                    required>
+                            </div>
+
+                            <div class="flex-tel">
+                                <div class="tel">
+                                    <label>TELEFONE</label>
+                                    <input 
+                                        type="tel"
+                                        name="telefone"
+                                        required>
+                                </div>
+                                <div class="phone">
+                                    <label>CELULAR</label>
+                                    <input 
+                                        type="tel"
+                                        name="phone"
+                                        required>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
